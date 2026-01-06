@@ -16,7 +16,8 @@ const HeroSection = () => {
           </div>
           
           <h1 className="text-4xl md:text-5xl lg:text-6xl font-bold text-foreground mb-6 leading-tight">
-            3D печать и моделирование — <span className="text-primary">просто</span>
+            Превращаем идеи в реальность
+            <span className="block text-primary mt-2">с помощью 3D технологий</span>
           </h1>
           
           <p className="text-lg md:text-xl text-muted-foreground mb-8 max-w-2xl mx-auto">
