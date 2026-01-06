@@ -1,6 +1,7 @@
 import { Phone, Send, Menu, X } from "lucide-react";
 import { Button } from "@/components/ui/button";
 import { useState } from "react";
+import Logo from "@/components/Logo";
 
 const Header = () => {
   const [isMenuOpen, setIsMenuOpen] = useState(false);
@@ -12,16 +13,16 @@ const Header = () => {
 
   return (
     <header className="fixed top-0 left-0 right-0 z-50 bg-card/95 backdrop-blur-sm border-b border-border">
-      <div className="container mx-auto px-4 py-4">
+      <div className="container mx-auto px-4 py-3">
         <div className="flex items-center justify-between">
           {/* Logo */}
           <div className="flex items-center gap-3">
-            <div className="w-10 h-10 bg-primary rounded-lg flex items-center justify-center">
-              <span className="text-primary-foreground font-bold text-lg">3D</span>
-            </div>
+            <Logo />
             <div>
-              <h1 className="font-semibold text-foreground text-lg leading-tight">3D печать</h1>
-              <p className="text-xs text-muted-foreground">легко</p>
+              <h1 className="font-bold text-foreground text-xl leading-tight tracking-tight">
+                3D печать
+              </h1>
+              <p className="text-xs text-primary font-medium tracking-widest uppercase">легко</p>
             </div>
           </div>
 

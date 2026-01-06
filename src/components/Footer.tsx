@@ -1,4 +1,5 @@
 import { Phone, Send } from "lucide-react";
+import Logo from "@/components/Logo";
 
 const Footer = () => {
   return (
@@ -7,11 +8,10 @@ const Footer = () => {
         <div className="flex flex-col md:flex-row items-center justify-between gap-4">
           {/* Logo */}
           <div className="flex items-center gap-3">
-            <div className="w-8 h-8 bg-primary rounded-lg flex items-center justify-center">
-              <span className="text-primary-foreground font-bold text-sm">3D</span>
-            </div>
+            <Logo size="default" />
             <div>
-              <span className="font-semibold text-foreground">3D печать — легко</span>
+              <span className="font-bold text-foreground">3D печать</span>
+              <span className="text-primary font-medium ml-1">— легко</span>
             </div>
           </div>
 
