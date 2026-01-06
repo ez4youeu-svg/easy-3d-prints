@@ -1,5 +1,6 @@
 import { ArrowRight, Box, Layers } from "lucide-react";
 import { Button } from "@/components/ui/button";
+import printerBg from "@/assets/3d-printer-bg.jpg";
 
 const HeroSection = () => {
   const scrollToServices = () => {
@@ -7,8 +8,14 @@ const HeroSection = () => {
   };
 
   return (
-    <section className="pt-32 pb-20 px-4">
-      <div className="container mx-auto">
+    <section className="pt-32 pb-20 px-4 relative overflow-hidden">
+      {/* Background Image */}
+      <div 
+        className="absolute inset-0 bg-cover bg-center bg-no-repeat opacity-[0.08]"
+        style={{ backgroundImage: `url(${printerBg})` }}
+      />
+      <div className="absolute inset-0 bg-gradient-to-b from-background/50 via-background/80 to-background" />
+      <div className="container mx-auto relative z-10">
         <div className="max-w-3xl mx-auto text-center">
           <div className="inline-flex items-center gap-2 bg-primary/10 text-primary px-4 py-2 rounded-full text-sm font-medium mb-6">
             <Box className="w-4 h-4" />
