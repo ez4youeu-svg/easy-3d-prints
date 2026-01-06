@@ -11,7 +11,7 @@ const HeroSection = () => {
     <section className="pt-32 pb-20 px-4 relative overflow-hidden">
       {/* Background Image */}
       <div 
-        className="absolute inset-0 bg-cover bg-center bg-no-repeat opacity-25"
+        className="absolute inset-0 bg-cover bg-center bg-no-repeat opacity-[0.35]"
         style={{ backgroundImage: `url(${printerBg})` }}
       />
       <div className="absolute inset-0 bg-gradient-to-b from-background/50 via-background/80 to-background" />
