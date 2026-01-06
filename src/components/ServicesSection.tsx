@@ -1,5 +1,6 @@
 import { Cuboid, Printer, ArrowRight, Phone } from "lucide-react";
 import { Button } from "@/components/ui/button";
+import modelingBg from "@/assets/3d-modeling-bg.jpg";
 
 const services = [
   {
@@ -30,8 +31,15 @@ const services = [
 
 const ServicesSection = () => {
   return (
-    <section id="services" className="py-20 px-4">
-      <div className="container mx-auto">
+    <section id="services" className="py-20 px-4 relative overflow-hidden">
+      {/* Background Image */}
+      <div 
+        className="absolute inset-0 bg-cover bg-center bg-no-repeat opacity-[0.35]"
+        style={{ backgroundImage: `url(${modelingBg})` }}
+      />
+      <div className="absolute inset-0 bg-gradient-to-b from-background/60 via-background/80 to-background/60" />
+      
+      <div className="container mx-auto relative z-10">
         <div className="text-center mb-12">
           <h2 className="text-3xl md:text-4xl font-bold text-foreground mb-4">Наши услуги</h2>
           <p className="text-muted-foreground max-w-2xl mx-auto">
