@@ -1,5 +1,6 @@
 import { useState } from "react";
 import casePrototypeImg from "@/assets/portfolio-case-prototype.jpg";
+import figurineImg from "@/assets/portfolio-figurine.jpg";
 
 const portfolioItems = [
   {
@@ -14,7 +15,7 @@ const portfolioItems = [
     title: "Декоративная фигурка",
     category: "Печать",
     description: "Печать детализированной фигурки из PLA",
-    image: null
+    image: figurineImg
   },
   {
     id: 3,
