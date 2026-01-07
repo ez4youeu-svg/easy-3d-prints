@@ -16,15 +16,18 @@ const Header = () => {
       <div className="container mx-auto px-4 py-3">
         <div className="flex items-center justify-between">
           {/* Logo */}
-          <div className="flex items-center gap-3">
+          <button 
+            onClick={() => window.scrollTo({ top: 0, behavior: "smooth" })}
+            className="flex items-center gap-3 hover:opacity-80 transition-opacity"
+          >
             <Logo />
-            <div>
+            <div className="text-left">
               <h1 className="font-bold text-foreground text-xl leading-tight tracking-tight">
                 3D печать
               </h1>
               <p className="text-xs text-primary font-medium tracking-widest uppercase">легко</p>
             </div>
-          </div>
+          </button>
 
           {/* Desktop Navigation */}
           <nav className="hidden md:flex items-center gap-8">

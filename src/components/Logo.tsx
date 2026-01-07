@@ -1,9 +1,23 @@
-const Logo = ({ className = "", size = "default" }: { className?: string; size?: "default" | "large" }) => {
+interface LogoProps {
+  className?: string;
+  size?: "default" | "large";
+  onClick?: () => void;
+}
+
+const Logo = ({ className = "", size = "default", onClick }: LogoProps) => {
   const dimensions = size === "large" ? "w-14 h-14" : "w-11 h-11";
   
   return (
-    <div className={`${dimensions} ${className}`}>
-      <svg viewBox="0 0 48 48" fill="none" xmlns="http://www.w3.org/2000/svg" className="w-full h-full">
+    <div 
+      className={`${dimensions} ${className} cursor-pointer group`}
+      onClick={onClick}
+    >
+      <svg 
+        viewBox="0 0 48 48" 
+        fill="none" 
+        xmlns="http://www.w3.org/2000/svg" 
+        className="w-full h-full transition-transform duration-500 group-hover:rotate-[360deg] group-hover:scale-110"
+      >
         {/* Background gradient */}
         <defs>
           <linearGradient id="cubeGradient1" x1="0%" y1="0%" x2="100%" y2="100%">
@@ -24,18 +38,21 @@ const Logo = ({ className = "", size = "default" }: { className?: string; size?:
         <path 
           d="M4 14 L24 4 L24 34 L4 24 Z" 
           fill="url(#cubeGradient1)"
+          className="transition-all duration-300 group-hover:opacity-90"
         />
         
         {/* 3D Cube - Right face */}
         <path 
           d="M24 4 L44 14 L44 34 L24 44 L24 34 Z" 
           fill="url(#cubeGradient2)"
+          className="transition-all duration-300 group-hover:opacity-90"
         />
         
         {/* 3D Cube - Top face */}
         <path 
           d="M4 14 L24 4 L44 14 L24 24 Z" 
           fill="url(#cubeGradient3)"
+          className="transition-all duration-300 group-hover:brightness-110"
         />
         
         {/* Inner cube lines for depth */}
