@@ -1,41 +1,48 @@
 import { useState } from "react";
+import casePrototypeImg from "@/assets/portfolio-case-prototype.jpg";
 
 const portfolioItems = [
   {
     id: 1,
     title: "Прототип корпуса",
     category: "Моделирование",
-    description: "3D модель и печать корпуса для электроники"
+    description: "3D модель и печать корпуса для электроники",
+    image: casePrototypeImg
   },
   {
     id: 2,
     title: "Декоративная фигурка",
     category: "Печать",
-    description: "Печать детализированной фигурки из PLA"
+    description: "Печать детализированной фигурки из PLA",
+    image: null
   },
   {
     id: 3,
     title: "Запасная деталь",
     category: "Моделирование",
-    description: "Восстановление утерянной детали по образцу"
+    description: "Восстановление утерянной детали по образцу",
+    image: null
   },
   {
     id: 4,
     title: "Макет здания",
     category: "Печать",
-    description: "Архитектурный макет для презентации"
+    description: "Архитектурный макет для презентации",
+    image: null
   },
   {
     id: 5,
     title: "Держатель для телефона",
     category: "Моделирование",
-    description: "Индивидуальный дизайн подставки"
+    description: "Индивидуальный дизайн подставки",
+    image: null
   },
   {
     id: 6,
     title: "Механический узел",
     category: "Печать",
-    description: "Функциональная деталь механизма"
+    description: "Функциональная деталь механизма",
+    image: null
   }
 ];
 
@@ -79,15 +86,22 @@ const PortfolioSection = () => {
               key={item.id} 
               className="bg-background rounded-xl border border-border overflow-hidden hover:shadow-md transition-shadow group"
             >
-              {/* Placeholder for image */}
-              <div className="aspect-square bg-muted flex items-center justify-center">
-                <div className="text-center p-6">
-                  <div className="w-16 h-16 bg-primary/10 rounded-full flex items-center justify-center mx-auto mb-3">
-                    <span className="text-2xl font-bold text-primary">3D</span>
+              {item.image ? (
+                <img 
+                  src={item.image} 
+                  alt={item.title}
+                  className="aspect-square object-cover w-full group-hover:scale-105 transition-transform duration-300"
+                />
+              ) : (
+                <div className="aspect-square bg-muted flex items-center justify-center">
+                  <div className="text-center p-6">
+                    <div className="w-16 h-16 bg-primary/10 rounded-full flex items-center justify-center mx-auto mb-3">
+                      <span className="text-2xl font-bold text-primary">3D</span>
+                    </div>
+                    <p className="text-xs text-muted-foreground">Изображение проекта</p>
                   </div>
-                  <p className="text-xs text-muted-foreground">Изображение проекта</p>
                 </div>
-              </div>
+              )}
               <div className="p-5">
                 <span className="text-xs font-medium text-primary bg-primary/10 px-2 py-1 rounded">
                   {item.category}
