@@ -1,4 +1,4 @@
-import { ArrowRight } from "lucide-react";
+import { ArrowRight, Rocket, Diamond, Compass } from "lucide-react";
 import { Button } from "@/components/ui/button";
 import printerBg from "@/assets/3d-printer-bg.jpg";
 
@@ -34,6 +34,31 @@ const HeroSection = () => {
             <Button size="lg" variant="outline" asChild>
               <a href="#portfolio">Смотреть работы</a>
             </Button>
+          </div>
+
+          {/* Features */}
+          <div className="grid grid-cols-1 md:grid-cols-3 gap-6 mt-16">
+            <div className="bg-card p-6 rounded-xl border border-border">
+              <div className="w-12 h-12 bg-primary/10 rounded-lg flex items-center justify-center mb-4 mx-auto">
+                <Rocket className="w-6 h-6 text-primary" />
+              </div>
+              <h3 className="font-semibold text-foreground mb-2">Быстро</h3>
+              <p className="text-sm text-muted-foreground">Сроки от 1 дня в зависимости от сложности проекта</p>
+            </div>
+            <div className="bg-card p-6 rounded-xl border border-border">
+              <div className="w-12 h-12 bg-primary/10 rounded-lg flex items-center justify-center mb-4 mx-auto">
+                <Diamond className="w-6 h-6 text-primary" />
+              </div>
+              <h3 className="font-semibold text-foreground mb-2">Качественно</h3>
+              <p className="text-sm text-muted-foreground">Современное оборудование и проверенные материалы</p>
+            </div>
+            <div className="bg-card p-6 rounded-xl border border-border">
+              <div className="w-12 h-12 bg-primary/10 rounded-lg flex items-center justify-center mb-4 mx-auto">
+                <Compass className="w-6 h-6 text-primary" />
+              </div>
+              <h3 className="font-semibold text-foreground mb-2">Просто</h3>
+              <p className="text-sm text-muted-foreground">Понятный процесс от заявки до получения</p>
+            </div>
           </div>
         </div>
       </div>
