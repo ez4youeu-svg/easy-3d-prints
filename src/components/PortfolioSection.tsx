@@ -1,6 +1,7 @@
 import { useState } from "react";
 import casePrototypeImg from "@/assets/portfolio-case-prototype.jpg";
 import figurineImg from "@/assets/portfolio-figurine.jpg";
+import plantStandImg from "@/assets/portfolio-plant-stand.jpg";
 
 const portfolioItems = [
   {
@@ -19,10 +20,10 @@ const portfolioItems = [
   },
   {
     id: 3,
-    title: "Запасная деталь",
+    title: "Подставка для цветочного горшка",
     category: "Моделирование",
-    description: "Восстановление утерянной детали по образцу",
-    image: null
+    description: "Декоративная подставка с уникальным дизайном",
+    image: plantStandImg
   },
   {
     id: 4,
