@@ -1,23 +1,23 @@
-import { CheckCircle, Clock, MessageCircle, Shield } from "lucide-react";
+import { Zap, HeartHandshake, Gem, Sparkles } from "lucide-react";
 
 const features = [
   {
-    icon: Clock,
+    icon: Zap,
     title: "Быстрые сроки",
     description: "Выполняем заказы от 1 рабочего дня"
   },
   {
-    icon: MessageCircle,
+    icon: HeartHandshake,
     title: "На связи",
     description: "Отвечаем на вопросы в Telegram и по телефону"
   },
   {
-    icon: Shield,
+    icon: Gem,
     title: "Гарантия качества",
     description: "Контролируем каждый этап работы"
   },
   {
-    icon: CheckCircle,
+    icon: Sparkles,
     title: "Индивидуальный подход",
     description: "Учитываем все ваши пожелания"
   }
