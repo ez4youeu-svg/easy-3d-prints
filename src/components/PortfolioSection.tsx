@@ -2,6 +2,7 @@ import { useState } from "react";
 import casePrototypeImg from "@/assets/portfolio-case-prototype.jpg";
 import figurineImg from "@/assets/portfolio-figurine.jpg";
 import plantStandImg from "@/assets/portfolio-plant-stand.jpg";
+import characterImg from "@/assets/portfolio-character.png";
 
 const portfolioItems = [
   {
@@ -27,10 +28,10 @@ const portfolioItems = [
   },
   {
     id: 4,
-    title: "Макет здания",
+    title: "Игровой персонаж",
     category: "Печать",
-    description: "Архитектурный макет для презентации",
-    image: null
+    description: "Многоцветная печать с ручной покраской",
+    image: characterImg
   },
   {
     id: 5,
