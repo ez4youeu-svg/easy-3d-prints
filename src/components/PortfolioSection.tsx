@@ -3,6 +3,8 @@ import casePrototypeImg from "@/assets/portfolio-case-prototype.jpg";
 import figurineImg from "@/assets/portfolio-figurine.jpg";
 import plantStandImg from "@/assets/portfolio-plant-stand.jpg";
 import characterImg from "@/assets/portfolio-character.png";
+import phoneHolderImg from "@/assets/portfolio-phone-holder.jpg";
+import mechanicalImg from "@/assets/portfolio-mechanical.jpg";
 
 const portfolioItems = [
   {
@@ -38,14 +40,14 @@ const portfolioItems = [
     title: "Держатель для телефона",
     category: "Моделирование",
     description: "Индивидуальный дизайн подставки",
-    image: null
+    image: phoneHolderImg
   },
   {
     id: 6,
     title: "Механический узел",
     category: "Печать",
     description: "Функциональная деталь механизма",
-    image: null
+    image: mechanicalImg
   }
 ];
 
