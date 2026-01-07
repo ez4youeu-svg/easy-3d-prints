@@ -36,9 +36,20 @@ const Footer = () => {
           </div>
 
           {/* Copyright */}
-          <p className="text-sm text-muted-foreground">
-            © 2024 Воронеж
-          </p>
+          <div className="text-sm text-muted-foreground text-center md:text-right">
+            <p>© 2024 Воронеж</p>
+            <p className="text-xs mt-1">
+              Разработано{" "}
+              <a 
+                href="https://noirdig.ru/" 
+                target="_blank" 
+                rel="noopener noreferrer"
+                className="text-primary/70 hover:text-primary transition-colors"
+              >
+                Noirdig Studio
+              </a>
+            </p>
+          </div>
         </div>
       </div>
     </footer>
