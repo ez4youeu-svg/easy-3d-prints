@@ -53,7 +53,7 @@ const ContactSection = () => {
               
               <div className="flex flex-col sm:flex-row gap-4">
                 <Button size="lg" className="gap-2 flex-1" asChild>
-                  <a href="tel:+79001234567">
+                  <a href="tel:+79009261124">
                     <Phone className="w-5 h-5" />
                     Позвонить
                   </a>

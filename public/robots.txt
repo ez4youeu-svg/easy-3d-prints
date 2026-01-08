@@ -16,4 +16,4 @@ Allow: /
 User-agent: *
 Allow: /
 
-Sitemap: https://3d-print-voronezh.ru/sitemap.xml
+Sitemap: https://3dlegko.ru/sitemap.xml
