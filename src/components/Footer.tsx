@@ -18,11 +18,11 @@ const Footer = () => {
           {/* Contact */}
           <div className="flex items-center gap-6">
             <a 
-              href="tel:+79001234567" 
+              href="tel:+79009261124" 
               className="flex items-center gap-2 text-muted-foreground hover:text-foreground transition-colors"
             >
               <Phone className="w-4 h-4" />
-              <span className="text-sm">+7 900 123-45-67</span>
+              <span className="text-sm">8 900 926-11-24</span>
             </a>
             <a 
               href="https://t.me/your_telegram" 
@@ -37,7 +37,7 @@ const Footer = () => {
 
           {/* Copyright */}
           <div className="text-sm text-muted-foreground text-center md:text-right">
-            <p>© 2024 Воронеж</p>
+            <p>© 2025 Воронеж</p>
             <p className="text-xs mt-1">
               Разработано{" "}
               <a 
