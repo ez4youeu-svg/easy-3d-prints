@@ -23,7 +23,7 @@ const ContactSection = () => {
                   </div>
                   <div>
                     <h3 className="font-semibold text-foreground mb-1">Адрес</h3>
-                    <p className="text-muted-foreground">ул. Дорожная, д. 17, г. Воронеж</p>
+                    <p className="text-muted-foreground">ул. Дорожная, д. 17е, г. Воронеж</p>
                   </div>
                 </div>
               </div>
