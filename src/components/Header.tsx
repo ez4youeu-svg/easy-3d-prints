@@ -54,7 +54,7 @@ const Header = () => {
               </a>
             </Button>
             <Button size="sm" asChild>
-              <a href="tel:+79001234567" className="flex items-center gap-2">
+              <a href="tel:+79009261124" className="flex items-center gap-2">
                 <Phone className="w-4 h-4" />
                 Позвонить
               </a>
@@ -91,7 +91,7 @@ const Header = () => {
                   </a>
                 </Button>
                 <Button size="sm" asChild className="flex-1">
-                  <a href="tel:+79001234567" className="flex items-center justify-center gap-2">
+                  <a href="tel:+79009261124" className="flex items-center justify-center gap-2">
                     <Phone className="w-4 h-4" />
                     Позвонить
                   </a>

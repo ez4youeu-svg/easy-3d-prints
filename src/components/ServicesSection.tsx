@@ -69,7 +69,7 @@ const ServicesSection = () => {
               <div className="flex items-center justify-between pt-6 border-t border-border">
                 <span className="text-lg font-semibold text-primary">{service.price}</span>
                 <Button size="sm" asChild>
-                  <a href="tel:+79001234567" className="gap-2">
+                  <a href="tel:+79009261124" className="gap-2">
                     <Phone className="w-4 h-4" />
                     Заказать
                   </a>
