@@ -25,7 +25,7 @@ const Footer = () => {
               <span className="text-sm">8 900 926-11-24</span>
             </a>
             <a 
-              href="https://t.me/your_telegram" 
+              href="https://t.me/Printingiseasy_bot" 
               target="_blank" 
               rel="noopener noreferrer"
               className="flex items-center gap-2 text-muted-foreground hover:text-foreground transition-colors"

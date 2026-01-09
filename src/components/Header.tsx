@@ -48,7 +48,7 @@ const Header = () => {
           {/* Contact Buttons */}
           <div className="hidden md:flex items-center gap-3">
             <Button variant="outline" size="sm" asChild>
-              <a href="https://t.me/your_telegram" target="_blank" rel="noopener noreferrer" className="flex items-center gap-2">
+              <a href="https://t.me/Printingiseasy_bot" target="_blank" rel="noopener noreferrer" className="flex items-center gap-2">
                 <Send className="w-4 h-4" />
                 Telegram
               </a>
@@ -85,7 +85,7 @@ const Header = () => {
               </button>
               <div className="flex gap-3 mt-2">
                 <Button variant="outline" size="sm" asChild className="flex-1">
-                  <a href="https://t.me/your_telegram" target="_blank" rel="noopener noreferrer" className="flex items-center justify-center gap-2">
+                  <a href="https://t.me/Printingiseasy_bot" target="_blank" rel="noopener noreferrer" className="flex items-center justify-center gap-2">
                     <Send className="w-4 h-4" />
                     Telegram
                   </a>
