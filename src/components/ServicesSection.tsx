@@ -82,7 +82,7 @@ const ServicesSection = () => {
         <div className="text-center mt-12">
           <p className="text-muted-foreground mb-4">Не знаете, что выбрать?</p>
           <Button variant="outline" asChild>
-            <a href="https://t.me/your_telegram" target="_blank" rel="noopener noreferrer" className="gap-2">
+            <a href="https://t.me/Printingiseasy_bot" target="_blank" rel="noopener noreferrer" className="gap-2">
               Получить консультацию
               <ArrowRight className="w-4 h-4" />
             </a>

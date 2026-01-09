@@ -59,7 +59,7 @@ const ContactSection = () => {
                   </a>
                 </Button>
                 <Button size="lg" variant="outline" className="gap-2 flex-1" asChild>
-                  <a href="https://t.me/your_telegram" target="_blank" rel="noopener noreferrer">
+                  <a href="https://t.me/Printingiseasy_bot" target="_blank" rel="noopener noreferrer">
                     <Send className="w-5 h-5" />
                     Telegram
                   </a>
